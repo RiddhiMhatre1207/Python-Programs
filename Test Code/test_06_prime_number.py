@@ -8,7 +8,7 @@ spec = importlib.util.spec_from_file_location(
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
- is_prime = module.is_prime
+is_prime = module.is_prime
 
 def test_two():
     assert is_prime(2) == True
